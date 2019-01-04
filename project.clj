@@ -12,6 +12,10 @@
                  [org.clojure/test.check "0.9.0"]
                  [com.gfredericks/test.chuck "0.2.7"
                   :exclusions [clj-time]]]
+  
+  :deploy-repositories
+  [["releases" {:url "https://clojars.org/repo/" :creds :gpg}]]
+  
   :profiles
   {:dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
          :jvm-opts ["-Xmx2g"]
